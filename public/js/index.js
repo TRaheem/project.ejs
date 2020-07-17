@@ -1,5 +1,5 @@
 
-     fetch('http://sheltered-retreat-17468.herokuapp.com/api/desinations')
+     fetch('http://localhost:3000/api/images')
      .then(function(response) {
        return response.json();
      })
