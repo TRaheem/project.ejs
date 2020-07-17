@@ -1,0 +1,309 @@
+/* Author: Titilope Raheem
+   Date: 14th July 2020
+   Course module: CPRG-210-XM1 - Wed Application Development
+   Assignment 2 - Travel Experts Agency Website*/
+
+/* Google font imported*/
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:wght@300&display=swap');
+
+/* Define font style and width*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Navigation styling and setup*/
+.nav-wrap {
+  width: 100%;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgb(112, 112, 202);
+}
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+  
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* styling of navigation links*/
+.nav-link a {
+  color: rgb(54, 42, 42);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: grey;
+  transition: color 0.3s ease-out;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(110, 104, 104);
+  border-radius: 5px;
+}
+  
+/* Portrait menu */
+.menu-toggle .bar{
+  width: 30px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+}
+  
+.nav-link a:hover {
+  background-image: linear-gradient(grey, rgb(104, 69, 69));
+}
+
+.nav-link a:active {
+  background-image: linear-gradient(lightblue, grey);
+}
+
+/*toggle menu*/
+.menu-toggle {
+  justify-self: end;
+  margin-right: 10px;
+  display: none;
+}
+  
+.menu-toggle:hover{
+  cursor: pointer;
+}
+  
+/* Media Query */
+  
+@media only screen and (max-width: 720px) {   
+
+  .nav-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+  }
+    
+  .navbar li {
+    padding: 10px;
+  }
+    
+  .navbar li a {
+    font-size: 1rem;
+  }
+     
+  .menu-toggle, .bar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+    
+  .portrait-nav {
+    transform: translate(0%)!important;
+  }
+   
+  #contact {
+    flex-direction: column;
+  }   
+}
+
+/* Style hero section*/
+#Home{
+  background-image: url(https://picsum.photos/id/1051/200/300);
+  height:100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* stlye logo layout*/
+.logo{
+  width: 150px;
+  height: 120px;
+  cursor: pointer;
+  margin: 0;
+  float: left;
+  padding: 10px;
+}
+
+.hero-section{
+  text-align: center;
+  position: absolute;
+  margin-top:10px;
+}
+
+h1{
+  font-size: 3em;
+  font-family:"shadows into light", sans-serif;
+  text-align: center;
+ }
+
+span{
+  color: rgb(105, 69, 48);
+}
+
+p{
+  margin: 20px;
+  font-family: "source sans pro", sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+}
+
+.pagetitle a{
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-family: "source sans pro", sans-serif;
+}
+
+/* Style website goal - sign up here*/
+.web-goal{
+  width:150px;
+  font-weight:bold;
+  padding: 10px;
+  color: rgb(212, 35, 35);
+  border: 2px solid black;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  float: inherit;
+}
+
+.web-goal:hover, .web-goal:active{
+  background-image: linear-gradient(white, black);
+  color: #000;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* Style Destination and Gallery*/
+#Destinations{
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(161, 125, 125);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#Destinations h2{
+  text-align: center;
+  margin-top: 30px;
+  font-family: "source sans pro", sans-serif;
+}
+
+/* gallery styling*/
+.gallery{
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img{
+  width: 350px;
+  height: 300px;
+  transition: 1s;
+  padding: 15px;
+}
+
+.gallery img:hover{
+  filter: grayscale(100%);
+}
+
+
+/* Style Contact form and Other contact information*/
+#contact{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+
+}
+
+#information {
+  background-color: rgb(144, 149, 179);
+  margin: 10px;
+  padding: 35px;
+  font-family: "source sans pro", sans-serif;
+}
+
+#contact h2{
+  text-align: start;
+  font-size: 1.7em;
+  margin: 20px 0;
+  padding-left: 0;
+  color: #84468a;
+}
+
+#contact h4{
+  font-size: 1em;
+  color: #7a4e7e;
+}
+
+label.required ::after{
+  content: '*';
+  color: red;
+}
+
+
+#information input[type="text"],
+#information input[type="email"],
+#information input[type="tel"],
+#information select,
+#information textarea {
+  width: 95%;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  background: rgb(248, 246, 246);
+  margin-bottom: 16px;
+  padding: 20px;
+}
+
+#information button[type="submit"] {
+  cursor: pointer;
+  width: 30%;
+  background: #84468a;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+p{
+  font-weight: bold;
+}
+
+.address{
+  display: block;
+  margin: 10px;
+  padding: 20px 20px;
+  border: 1px solid grey;
+}
+
+/* Style footer*/
+footer{
+  bottom: 0;
+  width: 100%;
+  font-weight: bolder;
+  margin:0;
+  background: rgb(190, 201, 223);
+  text-align: center;
+}

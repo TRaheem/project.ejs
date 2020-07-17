@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Titilope Raheem">
+  <meta name="date" content="14th July 2020">
+  <meta name="course module" content="CPRG-210-XM1 - Wed Application Development">
+  <meta name="assignment" content="Assignment 2 - Travel Experts Agency Website">
+  <title>Travel Experts Agency</title>
+  <link rel="stylesheet" href="css/register.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header class="head-wrap">
+    <div class="nav-wrap">
+      <nav class="navbar">
+        <a href="/"><img src="images/canvas_nav.png" class="logo" alt="Website Logo"></a>
+        <h3><a href="/">Salem Travel Experts Agency</a></h3>
+        <div class="menu-toggle" id=portrait-menu>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav no">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/#Destinations">Destinations</a></li>
+          <li class="nav-link"><a href="/#contact">Contact Us</a></li>
+          <li class="nav-link"><a href="/login.html">Login</a></li>
+          <li class="nav-link"><a class="current" href="#register">Register</a></li>
+        </ul>
+    </nav>
+   </div>
+  </header>
+  
+  <main>
+    <div id="register">
+      <form action="https://formspree.io/xgennzer" method="POST">
+          <fieldset>
+            <legend></legend>
+            <label class="required"><span>Name</span>
+              <input type="text" placeholder="Enter full name" required>
+            </label>    
+            <label class="required"><span>Email</span>
+              <input type="email" placeholder="Enter full name" required>
+            </label>                  
+            <label class="required">
+              <span>Phone</span>
+              <input type="tel" placeholder="Enter phone number (including country and area code)">
+            </label>
+            <label class="required">
+              <span>Password</span>
+              <input type="password" placeholder="Password should be minimum of 8 characters" minlength="8" required>
+            </label>
+            <label class="passwordlength"> 
+              Password must be at least 8 characters in length
+            </label>
+            <label class="required">
+              <span>Confirm Password</span>
+              <input type="password" placeholder="same as entered above" minlength= "8" required>
+            </label>
+            <label class= "checkbox">Subscribe to Newsletter <span class="checkmark"></span>
+              <input type="checkbox">
+            </label>     
+          </fieldset>
+          <button>Sign Up</button>
+        </form>    
+      </div>
+    </main>
+
+  <footer>&copy; 2020 Titilope Raheem</footer>
+
+  <script type="text/javascript"src="js/index.js"></script>
+
+</body>
+</html>

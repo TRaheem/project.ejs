@@ -1,0 +1,198 @@
+/* Author: Titilope Raheem
+   Date: 14th July 2020
+   Course module: CPRG-210-XM1 - Wed Application Development
+   Assignment 2 - Travel Experts Agency Website*/
+
+/* Google font imported*/
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:wght@300&display=swap');
+
+/* Define font style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  line-height: 1.3;
+  font-size: 16px;
+  height: 100vh;
+}
+
+/* Navigation styling and setup*/
+.head-wrap {
+  width: 100%;
+}
+  
+.nav-wrap {
+  width: 100%;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  background-color: rgb(112, 112, 202);
+}
+  
+h3{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+  
+.navbar img {
+  height: 50px;
+  width: 100px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+  
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+  
+.nav-link a {
+  color: rgb(54, 42, 42);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: grey;
+  transition: color 0.3s ease-out;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(110, 104, 104);
+  border-radius: 5px;
+}
+  
+/* Portrait menu */
+.menu-toggle .bar{
+  width: 30px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+}
+  
+.nav-link a:hover {
+  background-image: linear-gradient(grey, rgb(104, 69, 69));
+}
+
+.nav-link a:active {
+  background-image: linear-gradient(lightblue, grey);
+}
+
+.current {
+  background-image: linear-gradient(rgb(64, 64, 190), purple);
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 10px;
+  display: none;
+}
+  
+.menu-toggle:hover{
+  cursor: pointer;
+}
+  
+/* Media Query */
+@media only screen and (max-width: 720px) {   
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+    
+  .navbar li {
+    padding: 10px;
+  }
+    
+  .navbar li a {
+    font-size: 1rem;
+  }
+     
+  .menu-toggle, .bar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+    
+  .portrait-nav {
+    transform: translate(0%)!important;
+  }
+      
+}
+
+main{
+    background-image: url(https://picsum.photos/id/279/200/300);
+    background-size: cover;
+    background-position: center;
+}
+span{
+    float: left;
+}
+#register{
+    background: #b895b9;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+#register input{
+    font-family: sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 10px;
+    margin: 0 0 15px;
+    padding: 13.5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+input type:invalid{
+    background-color: red;
+}
+label.required ::after{
+    content: '*';
+    color: red;
+}
+
+.passwordlength{
+    float: left;
+    text-align: start;
+    padding-bottom: 15px;
+}
+
+#register button{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #d1b2b2;
+    width: 100%;
+    border: 0;
+    padding: 8px;
+    color: #9c5a5a;
+    font-size: 14px;
+}
+#register button:hover{
+    background-image: linear-gradient(white, black);
+}
+footer{
+    margin:0;
+    background: rgb(190, 201, 223);
+    text-align: center;
+}

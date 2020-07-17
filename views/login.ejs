@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Titilope Raheem">
+  <meta name="date" content="14th July 2020">
+  <meta name="course module" content="CPRG-210-XM1 - Wed Application Development">
+  <meta name="assignment" content="Assignment 2 - Travel Experts Agency Website">
+  <title>Travel Experts Agency</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header class="head-wrap">
+    <div class="nav-wrap">
+      <nav class="navbar">
+        <a href="/"><img src="images/canvas_nav.png" class="logo" alt="Website Logo"></a>
+        <h3><a href="/">Salem Travel Experts Agency</a></h3>
+        <div class="menu-toggle" id=portrait-menu>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav no">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/#Destinations">Destinations</a></li>
+          <li class="nav-link"><a href="/#contact">Contact Us</a></li>
+          <li class="nav-link"><a class="current" href="/login.html">Login</a></li>
+          <li class="nav-link"><a href="/register.html">Register</a></li>
+        </ul>
+    </nav>
+   </div>
+  </header>
+
+  <main>
+    <div class="form">
+      <div id="login">
+        <form action="https://formspree.io/xgennzer" method="POST">
+          <fieldset>
+          <legend></legend>
+          <label class="required" >
+            <span>Email </span>
+            <input placeholder="Enter Email Address" type="email" required>
+          </label>
+          <label class="required" >
+            <span>Password </span>
+            <input placeholder="Enter Password" type="password" required>
+          </label>
+          </fieldset>
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>&copy; 2020 Titilope Raheem</footer>
+  
+  <script type="text/javascript"src="js/index.js"></script>
+</body>
+</html>

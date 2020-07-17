@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Titilope Raheem">
+  <meta name="date" content="14th July 2020">
+  <meta name="course module" content="CPRG-210-XM1 - Wed Application Development">
+  <meta name="assignment" content="Assignment 2 - Travel Experts Agency Website">
+  <title>Travel Experts Agency</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <div class="menu-toggle" id=portrait-menu>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no">
+        <li class="nav-link"><a href="/">Home</a></li>
+        <li class="nav-link"><a href="#Destinations">Destinations</a></li>
+        <li class="nav-link"><a href="#contact">Contact Us</a></li>
+        <li class="nav-link"><a href="/login.html">Login</a></li>
+        <li class="nav-link"><a href="/register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="Home">
+      <div class="hero-section">
+        <a href="#Home"><img src="images/canvas_nav.png" class="logo" alt="Website Logo"></a>
+        <h1>Connect to the <span>World</span> With Great Adventures</h1>
+        <p>Explore a World of Travel and Save More</p>
+        <a class="web-goal" href="register.html">Sign Up Here!</a>
+      </div>
+    </div>
+
+    <div id="Destinations">
+      <h2>Destination Gallery</h2>
+    </div>
+
+    <div class="gallery">
+              
+    </div>
+
+  <div id="contact">
+    <form id="information" action="https://formspree.io/xgennzer" method="post">
+      <fieldset> 
+        <legend></legend>
+        <h2>Contact Us Now </h2>
+        <h4>Send us a message and a travel expert will be happy to reach you</h4>
+        <div>
+          <label class="required">
+            <span>Name </span>
+            <input placeholder="Enter full name" type="text" required>
+          </label>
+        </div>
+        <div>
+          <label class="required">
+            <span>Email </span>
+            <input placeholder="Titilope.Raheem@edu.sait.ca" type="email" required>
+          </label>
+        </div>
+        <div>
+          <label><span>Phone </span>
+            <input placeholder="Enter your phone number including country and area code" type="tel" required>
+          </label>
+        </div>
+        <div>
+          <label><span>Continent of travel (if known)</span>
+            <select id="continent" name="Continent">
+              <option value="select">Select a continent</option>
+              <option value="australia">Australia</option>
+              <option value="north_america">North America</option>
+              <option value="south_america">South America</option>
+              <option value="Asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="africa">Africa</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label><span>Additional Information</span>
+            <textarea placeholder="What do you want us to know about your upcoming trip?" required>
+            </textarea>
+          </label>
+        </div>
+        <div>
+          <button name="submit" type="submit" id="contact-submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <div class ="address">
+      <p>Salem Travel Expert Agency<br>
+         Office Locations:
+      </p>
+      <ul>
+        <li>Calgary</li>
+        <li>Edmonton</li>
+        <li>Toronto</li>
+        <li>BC</li>
+      </ul>
+      <p>Phone - (403) 478-9580<br>
+         Email - salemagency@gmail.com<br>
+      </p>
+      <p>
+        Individual Agents:
+      </p>
+       <ol>
+          <li>Fathom Cream</li>
+          <li>Jake Marow</li>
+          <li>Bean Ateee</li>
+          <li>Facts Rice</li>
+          <li>Sugar Lee</li>
+          <li>Amanda Bright</li>
+       </ol>
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20066.63207975867!2d-114.09553766214036!3d51.04701247956212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe472f607e7%3A0xff059970e78f52c1!2sManpower!5e0!3m2!1sen!2sca!4v1593930164715!5m2!1sen!2sca" width="300" height="150"></iframe>
+      </div>
+     </div>
+    </div>
+
+  </main>
+  
+  <footer>&copy; 2020 Titilope Raheem</footer>
+
+  <script>
+    //hamburger menu.This line of code runs when the bar is clicked
+    $('.menu-toggle').click(function(){
+      $(".nav").toggleClass("portrait-nav");
+      $(this).toggleClass("is-active");
+    });
+  </script>
+  
+  <script type="text/javascript"src="js/index.js"></script>
+</body>
+</html>
